@@ -1,0 +1,90 @@
+.widget-AlertBox {
+  position: relative;
+}
+body,
+html {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+#wrap {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+#alert-box {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+#alert-box.hidden,
+.hidden {
+  opacity: 0;
+}
+#alert-text {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%) translateY(-10px);
+  display: inline-block;
+  text-shadow: none !important;
+}
+#alert-message,
+#alert-user-message {
+  text-align: center;
+  background-color: #FFFFFF;
+  color: #000000 !important;
+}
+#alert-message {
+  padding: 15px 25px;
+  background-color: #FFFFFF;
+  box-shadow: 0 2px 4px rgba(0,0,0, .4);
+  border-radius: 5px;
+}
+
+#alert-user-message {
+  background-color:  #FFFFFF;
+  box-shadow: 0 2px 4px rgba(0,0,0, .4);
+  display: inline-block;
+  padding: 5px 15px;
+  border-radius: 5px;
+  position: relative;
+  font-size: 1rem !important;
+  margin-top: 20px;
+}
+#alert-user-message::after {
+  content: '';
+  position: absolute;
+  background: #FFFFFF !important;
+  display: block;
+  width: 20px;
+  height: 20px;
+  top: -10px;
+  left: 50%;
+  transform: translateX(-50%) rotate(43deg);
+}
+#alert-user-message img {
+  display: none;
+}
+#alert-image {
+  position: relative;
+}
+#alert-image video {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#alert-message > span > span {
+  display: inline-block;
+}
+#alert-image {
+  z-index: 6;
+  position: relative;
+  height: 60px !important;
+  z-index: 9;
+}
+#alert-text-wrap {
+  z-index: 6;
+  position: relative;
+}

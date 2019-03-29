@@ -1,0 +1,106 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700);
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    overflow: hidden;
+}
+
+body {
+    text-shadow: 0 0 1px #000, 0 0 2px #000;
+    font-weight: 700;
+    font-size: {font_size};
+    line-height: 1.5em;
+    color: {text_color};
+}
+
+#log>div {
+    animation: fadeInRight .3s ease forwards, fadeOut 0.5s ease {message_hide_delay} forwards;
+    -webkit-animation: fadeInRight .3s ease forwards, fadeOut 0.5s ease {message_hide_delay} forwards;
+    margin-bottom: 20px;
+    display: block;
+}
+
+.colon {
+    display: none;
+}
+
+#log {
+    display: block;
+    position: absolute;
+    padding: 0 10px 10px;
+    width:  100%;
+    height: 100%;
+    -webkit-mask-image: url(https://i.imgur.com/J65yPhC.png);
+    mask-image: url(https://i.imgur.com/J65yPhC.png);
+    -webkit-mask-position: top center;
+    mask-position: center center;
+    -webkit-mask-repeat: repeat-x;
+    mask-repeat: no-repeat;
+}
+
+#log>div {
+    display: block;
+		width: 100%;
+		margin-bottom: {DistanciaItem}
+}
+
+#log>div.deleted {
+    visibility: hidden;
+}
+
+#log .emote {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    padding: 0.4em 0.2em;
+    position: relative;
+}
+
+#log .emote img {
+    display: inline-block;
+    height: 1em;
+    opacity: 0;
+}
+
+#log .meta {
+    width: auto;
+    display: inline-block;
+  	font-family: {FontNome};
+		font-weight: {FontNomeWeight};
+    background-color: {BackgroundNome};
+    border-radius: {BorderNome}px;
+  	color: {NomeColor} !important;
+    padding: 5px 20px;
+    margin-bottom: -20px;
+    margin-left: 20px;
+}
+
+#log .message {
+    width: 100%;
+    display: block;
+  	font-family: {FontText};
+		font-weight: {FontTextWeight};
+    background-color: {BackgroundText};
+  	text-shadow: none;
+  	padding: {MargenIntern};
+    border-radius: {BorderTexto}px;
+  	color: {TextColor};
+    word-wrap: break-word;
+}
+
+.badge {
+    display: inline-block;
+    margin-right: 0.2em;
+    position: relative;
+    height: 1em;
+    vertical-align: middle;
+    top: -0.1em;
+}
+
+.name {
+    margin-left: 0.2em;
+}

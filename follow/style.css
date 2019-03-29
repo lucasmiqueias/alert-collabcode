@@ -1,0 +1,67 @@
+.widget-AlertBox {
+  position: relative;
+}
+body,
+html {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+#wrap {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+#alert-box {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+#alert-box.hidden,
+.hidden {
+  opacity: 0;
+}
+#alert-text {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%) translateY(-10px);
+  display: inline-block;
+  background-color: black;
+  border-radius: 5px;
+  text-shadow: none !important;
+  padding: 15px 25px;
+  box-shadow: 0 3px 4px rgba(0,0,0, .4);
+  background: #FFFFFF;
+}
+#alert-message,
+#alert-user-message {
+  text-align: center;
+  color: #000000 !important;
+}
+#alert-user-message img {
+  vertical-align: middle;
+  height: 1em;
+}
+#alert-image {
+  position: relative;
+}
+#alert-image video {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#alert-message > span > span {
+  display: inline-block;
+}
+#alert-image {
+  z-index: 6;
+  position: relative;
+  height: 60px !important;
+  z-index: 9;
+}
+#alert-text-wrap {
+  z-index: 6;
+  position: relative;
+}

@@ -1,0 +1,82 @@
+{
+  "BackgroundNome": {
+      "label": "Background Nome",
+      "type": "colorpicker",
+      "value": "#f25a70"
+  },
+  "NomeColor": {
+      "label": "Cor do Nome",
+      "type": "colorpicker",
+      "value": "#FFFFFF"
+  },
+  "FontNome": {
+      "label": "Font do Nome",
+      "type": "fontpicker",
+      "value": "Poppins"
+  },
+  "FontNomeWeight": {
+      "label": "Font Weight do Texto",
+      "type": "slider",
+      "name": "",
+      "value": 600,
+      "max": 700,
+      "min": 300,
+      "steps": 100
+  },
+  "BackgroundText": {
+      "label": "Background texto",
+      "type": "colorpicker",
+      "value": "#00000050"
+  },
+  "TextColor": {
+      "label": "Cor do Texto",
+      "type": "colorpicker",
+      "value": "#FFFFFF"
+  },
+  "FontText": {
+      "label": "Font do Texto",
+      "type": "fontpicker",
+      "value": "Poppins"
+  },
+  "FontTextWeight": {
+      "label": "Font Weight do Texto",
+      "type": "slider",
+      "name": "",
+      "value": 400,
+      "max": 700,
+      "min": 300,
+      "steps": 100
+  },
+  "MargenIntern": {
+      "label": "Margem Texto | Não remover px",
+      "type": "textfield",
+      "value": "25px 20px 15px 20px"
+  },
+  "DistanciaItem": {
+      "label": "Distancia entre Box",
+      "type": "slider",
+      "name": "",
+      "value": 20,
+      "max": 50,
+      "min": 10,
+      "steps": 10
+  },
+  "BorderNome": {
+      "label": "Border Nome",
+      "type": "slider",
+      "name": "",
+      "value": 50,
+      "max": 50,
+      "min": 0,
+      "steps": 1
+  },
+  "BorderTexto": {
+      "label": "Border texto",
+      "type": "slider",
+      "name": "",
+      "value": 3,
+      "max": 50,
+      "min": 0,
+      "steps": 1
+  }
+}
